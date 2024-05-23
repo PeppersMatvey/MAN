@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Permission">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="Предоставьте разрешение">
+    </TextView>
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/reguest_permission">
+    </TextView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reguest_permission"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:textColor="#FF0000"
+        android:background="@color/white"
+        android:text="Предоставить разрешение"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>

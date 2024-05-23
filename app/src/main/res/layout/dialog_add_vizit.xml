@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Выберите статус и добавьте визит "
+    android:textSize="20sp">
+</TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="50sp">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_add_state"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_weight="1"
+                android:hint="Выберите статус"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:maxLines="1"></AutoCompleteTextView>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_str_vizit_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите описание визита (не обязательно)"
+        android:minHeight="48dp"
+        android:paddingHorizontal="5dp"
+        android:textSize="18sp"></EditText>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:text="Добавить визит"
+        android:id="@+id/button_str_vizit"
+        android:textColor="@color/white"
+        android:layout_height="50dp"
+        android:background="#1200FF"
+        android:layout_margin="10dp"></androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>

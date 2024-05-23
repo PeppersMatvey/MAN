@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_gradient_settings"
+    android:id="@+id/layaut_load"
+    android:orientation="vertical"
+    tools:context=".LoadAction">
+    <ProgressBar
+        android:layout_weight="3"
+        style="@style/Widget.Material3.CircularProgressIndicator.ExtraSmall"
+        android:layout_width="120dp"
+        android:indeterminateTint="@color/white"
+        android:progressDrawable="@drawable/progress"
+        android:indeterminate="true"
+        android:layout_height="120dp">
+    </ProgressBar>
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"
+        android:text="Загрузка..."/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="pin">Введите PIN код</string>
+    <string name="help_terminal">\nset password - изменить пароль.\nexit activity - выйти из терминала.\nexit act - выйти из терминала.\nimport zone - добавить зону.\nadd state - добавить статус.\nread state - посмотреть все статусы.\ndelete - удалить зону.\nstatistica - статистика зон.\nexit - выход из приложения.\nexit app - выход из приложения.\nadd home - добавить дом вручную.\ndi - Добавить изображение карты.\nhelp - показать все доступные команды.\nset size - Изменить размер значка на карте.</string>
+    <string name="Hello_text">Для входа в приложение введите пароль</string>
+    <string name="reguest_permission">Для предоставления разрешения вы можете воспользоваться одним из способов:\n1) Нажать на кнопку ниже и в появившемся окне выбрать это приложение, потом перевести переключатьель в состояние ON\n2) Найти в настройках список приложений, потом выбрать это приложение, в разделе О приложении найдите пункт Разрешения и предоставьте все необходимые разрешения, после чего перезайдите в приложение</string>
+    <string name="zonesinfonumberzone">zonesInfoNumberZone</string>
+</resources>

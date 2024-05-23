@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetPropertesHomeOpen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название улицы"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:gravity="center">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/strit_name_edit"
+            android:paddingHorizontal="15dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:hint="Введите новое название улицы"
+            android:layout_height="wrap_content">
+        </EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Номер дома"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:gravity="center">
+        </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/home_nomer_edit"
+        android:paddingHorizontal="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:hint="Введите новый номер дома"
+        android:layout_height="wrap_content">
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Номер квартиры"
+            android:textSize="18sp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/home_set_kv_edit"
+        android:paddingHorizontal="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:hint="Введите новый номер квартиры"
+        android:layout_height="wrap_content"
+        android:digits="0987654321"
+        android:inputType="number">
+    </EditText>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Примечание"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:gravity="center">
+        </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/home_str_set_edit"
+        android:paddingHorizontal="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:hint="Введите новое примечание"
+        android:layout_height="wrap_content">
+    </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sawe_new_propertes_home"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="#001AFF"
+        android:text="Сохранить изменения"
+        android:textColor="@color/white"
+        android:layout_height="70dp"></androidx.appcompat.widget.AppCompatButton>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:id="@+id/delete_home"
+        android:layout_margin="10dp"
+        android:background="#FF0000"
+        android:text="Удалить"
+        android:textColor="@color/white"
+        android:layout_height="70dp"></androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>

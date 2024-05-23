@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Add_One_Home">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Введите сведения о доме для его добавления в список"
+                android:padding="15sp"
+                android:textSize="25sp"
+                android:gravity="center">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/strit_nomer"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:layout_weight="1"
+                        android:hint="Название улицы"
+                        android:inputType="textCapWords"
+                        android:maxLength="50"
+                        android:maxLines="1"></EditText>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:textSize="13sp"
+                android:padding="5sp"
+                android:text="*Введите полное название улицы. Например: Строителей">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/home_nomer"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:hint="Номер дома"
+                    android:inputType="textCapCharacters"
+                    android:digits="0987654321/.,ЙЦУКЕНГШЩЗХФЫВАПРОЛДЖЭЯЧСМИТБЮ">
+                </EditText>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/addSlash"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/keyboard_vector">
+                </androidx.appcompat.widget.AppCompatButton>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:padding="5sp"
+                android:text="*Введите полный номер дома. Например: 26/3">
+            </TextView>
+            <EditText
+                android:id="@+id/Length_apartaments"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:hint="Количество квартир"
+                android:inputType="number"
+                android:digits="0987654321">
+            </EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:padding="5sp"
+                android:text="*Введите номер квартиры в доме\n\t-1_Частный дом">
+            </TextView>
+            <EditText
+                android:id="@+id/str_edit"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:hint="Примечания к дому">
+            </EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:textSize="13sp"
+                android:padding="5sp"
+                android:text="*Введите примечание если оно есть. Если его нету в этом поле будет запись: нет примечаний">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:textSize="17sp"
+                android:padding="5sp"
+                android:text="Выберите зону в которую нужно добавить дом.">
+            </TextView>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:id="@+id/Radio_bottom_group"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/unoRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Зона 1"
+                    android:textSize="20sp">
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/dusRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Зона 2"
+                    android:textSize="20sp"></RadioButton>
+                <RadioButton
+                    android:id="@+id/tresRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Зона 3"
+                    android:textSize="20sp"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/cuatrisRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Зона 4"
+                    android:textSize="20sp">
+                </RadioButton>
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cancel_button1"
+                    android:layout_width="0sp"
+                    android:layout_height="70sp"
+                    android:layout_weight="1"
+                    android:text="Отмена"
+                    android:background="@color/white"
+                    android:textColor="@color/red">
+                </androidx.appcompat.widget.AppCompatButton>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/create_button1"
+                    android:layout_width="0sp"
+                    android:layout_height="70sp"
+                    android:layout_weight="1"
+                    android:text="Сохрнить"
+                    android:background="@color/white"
+                    android:textColor="@color/terminal">
+                </androidx.appcompat.widget.AppCompatButton>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

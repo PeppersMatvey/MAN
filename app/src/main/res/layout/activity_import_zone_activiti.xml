@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ImportZoneActivity">
+    <TextView
+        android:id="@+id/state_import"
+        android:layout_width="match_parent"
+        android:text="NULL"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/progress_import"
+        android:indeterminate="false"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminateTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:max="100"
+        android:progress="0"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="3dp"></ProgressBar>
+    <TextView
+        android:id="@+id/progress_import_textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="NULL"
+        android:padding="5sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="right">
+    </TextView>
+</LinearLayout>

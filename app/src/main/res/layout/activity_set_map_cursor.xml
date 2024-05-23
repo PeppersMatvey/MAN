@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetMapCursor">
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:max="45"
+        android:min="12"
+        android:thumb="@drawable/baseline_back_hand_24"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Размер метки"
+        android:layout_height="wrap_content"></TextView>
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"></View>
+    <TextView
+        android:id="@+id/text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"></TextView>
+    <ImageView
+        android:id="@+id/cursor_image"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+    </ImageView>
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:max="40"
+        android:min="20"
+        android:thumb="@drawable/baseline_back_hand_24"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Размер текста"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:id="@+id/text_size2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"></TextView>
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"></View>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_save_cursor"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/buttom_filter_style"
+        android:text="Сохранить изменение"
+        android:textSize="15sp"></androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>
+

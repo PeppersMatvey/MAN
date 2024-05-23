@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_splash"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"></View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="MAPS AND NOTES"
+        android:textSize="35sp"></TextView>
+<ImageView
+    android:layout_width="400dp"
+    android:layout_gravity="center"
+    android:background="@drawable/icon"
+    android:layout_height="400dp"></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Карты и заметки"
+        android:textSize="25sp"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"></View>
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Menu_list">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <EditText
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/edit_searsh_menu_list"
+                    android:layout_width="320dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dp"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:background="@drawable/edit_style"
+                    android:hint="Поиск..."
+                    android:paddingHorizontal="20dp"
+                    android:textSize="24sp"></EditText>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/settings_buttom"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/baseline_settings_24"></androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/map_buttom_layout"
+                    android:layout_height="40dp">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/map_buttom"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/outline_map_24"></androidx.appcompat.widget.AppCompatButton>
+                    <TextView
+                        android:id="@+id/map_buttom_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="Карты"></TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></View>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/filter_searsh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/buttom_filter_style"
+                    android:padding="9dp"
+                    android:text="Фильтр по статусу"></androidx.appcompat.widget.AppCompatButton>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:id="@+id/layout_menu_list"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/exit_app_floating_buttom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/orange"
+        android:src="@drawable/baseline_exit_to_app_24"
+        app:maxImageSize="56dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>!-->
+
+</LinearLayout>

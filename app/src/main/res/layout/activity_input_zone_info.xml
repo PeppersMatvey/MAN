@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".ImportZoneActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></View>
+                    <TextView
+                        android:id="@+id/chain1"
+                        android:layout_weight="1"
+                        android:layout_width="60dp"
+                        android:gravity="center"
+                        android:layout_height="60dp"
+                        android:background="@drawable/oval"
+                        android:text="1"
+                        android:textSize="25sp"></TextView>
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></View>
+                    <TextView
+                        android:id="@+id/chain2"
+                        android:layout_weight="1"
+                        android:layout_width="60dp"
+                        android:gravity="center"
+                        android:layout_height="60dp"
+                        android:background="@drawable/oval"
+                        android:text="2"
+                        android:textSize="25sp"></TextView>
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></View>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></View>
+                    <TextView
+                        android:id="@+id/chain3"
+                        android:layout_weight="1"
+                        android:layout_width="60dp"
+                        android:gravity="center"
+                        android:layout_height="60dp"
+                        android:background="@drawable/oval"
+                        android:text="3"
+                        android:textSize="25sp"></TextView>
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></View>
+                    <TextView
+                        android:id="@+id/chain4"
+                        android:layout_weight="1"
+                        android:layout_width="60dp"
+                        android:gravity="center"
+                        android:layout_height="60dp"
+                        android:background="@drawable/oval"
+                        android:text="4"
+                        android:textSize="25sp"></TextView>
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></View>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <EditText
+                android:id="@+id/edit_kw_import"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_style"
+                android:digits="0987654321"
+                android:hint="Введите номер квартиры"
+                android:inputType="number"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"></EditText>
+
+            <TextView
+                android:id="@+id/textView_import_vibor_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:text="Выберите зону и номер квартир"
+                android:textSize="20sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_import"
+                android:layout_width="240dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/buttom_filter_style"
+                android:text="Импортировать"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
